@@ -1,0 +1,69 @@
+@font-face {
+    font-family:"digital";
+    src: url('./assets/font/display.ttf');
+}
+@font-face {
+    font-family: "tecno";
+    src: url('./assets/font/tecno.ttf');
+}
+
+body 
+{
+    background-color: #1e1e1e;
+}
+
+.container 
+{
+    max-width: 100rem;
+    height: 40rem;
+    background-color: #1e1e1e;
+    
+    h2 
+    {
+        color: #fff;
+        text-align: center;
+        font-size: 4rem;
+        font-family: 'tecno';
+    }
+}
+
+.contenedorReloj 
+{
+    width: 50rem;
+    height: 30rem;
+    background-image: url('./assets/backgroundCondensador.png');
+    background-size: contain;
+    margin: 3rem auto;
+}
+.contenedor_tiempos
+
+{
+    width: 100%;
+    height: 9rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 1.3rem;
+    
+}
+
+.contenedor_tiempos .futuro 
+{
+   color: red;
+}
+.contenedor_tiempos  .presente 
+ {
+    color: green;
+ } 
+ .contenedor_tiempos  .pasado 
+ {
+    color: darkorange;
+ }
+
+ .contenedor_tiempos .hrs
+ {
+    margin-right: -2rem;
+ }
+   
+
+
