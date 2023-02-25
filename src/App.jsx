@@ -43,6 +43,14 @@ const App = () => {
     setDia(datoDay)
   }
 
+  if(datoHora < 10){
+    datoHora = "0" + datoHora;
+    setHora(datoHora)
+  }else 
+  {
+    setHora(datoHora)
+  }
+
   setHora(datoHora);
   setAnio(datoAnio);
   setDia(datoDay)
@@ -61,23 +69,23 @@ const App = () => {
       <div className='contenedorReloj'>
         <div className='contenedor_tiempos'>
           <h2 className='futuro'>{mesPasado}</h2>
-          <h2 className='futuro'>{dia}</h2>
-          <h2 className='futuro'>{anio + 10}</h2>
-          <h2 className='futuro hrs'>{hora - 4}</h2>
+          <h2 className='futuro days'>{dia}</h2>
+          <h2 className='futuro years'>{anio + 10}</h2>
+          <h2 className='futuro hrs'>{4 - hora}</h2>
           <h2 className='futuro'>{segundos}</h2>
         </div>
         <div className='contenedor_tiempos'>
           <h2 className='presente'>{mes}</h2>
-          <h2 className='presente'>{dia}</h2>
-          <h2 className='presente'>{anio}</h2>
+          <h2 className='presente days'>{dia}</h2>
+          <h2 className='presente years'>{anio}</h2>
           <h2 className='presente hrs'>{hora}</h2>
           <h2 className='presente'>{segundos}</h2>
         </div>
         <div className='contenedor_tiempos'>
           <h2 className='pasado'>{mes}</h2>
-          <h2 className='pasado'>{dia}</h2>
-          <h2 className='pasado'>{anio}</h2>
-          <h2 className='pasado hrs'>{hora - 5}</h2>
+          <h2 className='pasado days'>{dia}</h2>
+          <h2 className='pasado years'>{anio}</h2>
+          <h2 className='pasado hrs'>{5 - hora}</h2>
           <h2 className='pasado'>{segundos}</h2>
         </div>
 

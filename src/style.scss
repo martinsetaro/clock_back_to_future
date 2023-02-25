@@ -18,6 +18,7 @@ body
     height: 40rem;
     background-color: #1e1e1e;
     
+    
     h2 
     {
         color: #fff;
@@ -34,6 +35,9 @@ body
     background-image: url('./assets/backgroundCondensador.png');
     background-size: contain;
     margin: 3rem auto;
+    @media (orientation:landscape) {
+        height: auto;
+    }
 }
 .contenedor_tiempos
 
@@ -64,6 +68,14 @@ body
  {
     margin-right: -2rem;
  }
+ .contenedor_tiempos .years
+{
+    margin-left: -1.5rem;
+}
+.contenedor_tiempos .days
+{
+    margin-left: -1.5rem;
+}
    
 
 
